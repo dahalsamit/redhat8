@@ -1,0 +1,34 @@
+Exam Objectives:
+Access the shell prompt and issue commands with correct syntax
+use input-output redirection (>, >> | , 2 > etc.)
+Use grep and regular expression to analyze text.
+
+Q1) Write a command to show first 10 line from /var/log/syslog.
+head -10 /var/log/syslog
+Q2) Write a command to show last 10 line from  /var/log/syslog.
+tail -n 10 /var/log/syslog
+Q3) Write a command so that the content of /etc/passwd is copied to /root/passwoed.1
+
+cat /etc/passwd >> /root/password.1
+Q4) Write a command so that the user in  /etc/passwd  having a shell /bin/bash is saved to /root/password.bash
+cat /etc/passwd | grep "/bin/bash$" >> /root/password.bash
+Q5) Write a command to redirect the STDERR to  /root/stderr.out 
+ls -al /proc/1/fd/* 2 > /stderr.out
+Q6) Write a command to redirect the STDERR to /dev/null.
+ls -al /proc/1/smap 2> /dev/null
+Q5) You have a apache logs file in /var/log/apache with access.log and error.log. Use grep with regular expression in order to achieve following objectives.
+1) Grep ip address from both access and error log file
+
+3) Grep IP address and their corrosponding count
+
+Q6) Grep regexp
+You have to read the file regex.txt
+and grep email address
+grep phone Numbers
+grep Domain Name
+grep ip address
+grep Word starting with Mr. only
+grep Word ending with ing only.
+
+
+
