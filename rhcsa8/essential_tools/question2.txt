@@ -1,9 +1,31 @@
 Q1) Install ssh server on centos start the service and enable it. open firewall port 22 for ssh server.
-Q2) ssh from client to remote server
+dnf install openssh-server -y
+systemctl start sshd
+systemctl enable sshd 
+echo "checking if ssh is enabled or not"
+systemctl is-enabled sshd
+echo "Opening port 22"
+firewall-cmd --permanent --add-service=sshd
+
+Q2) Assuming server IP address is 10.10.10.20 and user is hanks ssh from client to remote server
+ssh hanks@10.10.10.20
 Q3) Generate ssh key pair and copy it to server and client machine for password less ssh.
+ssh-keygen -t rsa
+ssh-copy-id hanks@10.10.10.20
 Q4) Use Banner and ssh idle session time out to be 5 minutes.
+sed -i 's/#ClientAliveInterval 0/ClientAliveInterval 600/' sshd_config
+echo "Banner /etc/issue.net" >> sshd_config 
+systemctl restart sshd
+systemctl status sshd
 Q5) Explore ssh cipher used for ssh protocol
+
 Q6) Disable root user to ssh into the machine
-Q7) Configure ssh for puplic private key pair for ssh connection.
+sed -i 's/PermitRootLogin yes/PermitRootLogin no/' sshd_config 
+
+Q7) Disable Password Authentication for ssh connection.
+sed -i 's/PasswordAuthentication yes/PasswordAuthentication no/' sshd_config 
+
 Q8) Login in to the machine can configure multiuser target.
+systemctl get-default 
+systemctl set-default multiuser.target
 
