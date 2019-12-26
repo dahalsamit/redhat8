@@ -1,0 +1,5 @@
+Q1) Archive, compress, unpack, and uncompress files using tar, star, gzip, and bzip
+Q2) Create, delete, copy, and move files and directories
+Q3) Create hard and soft links
+Q4) List, set, and change standard ugo/rwx permissions
+

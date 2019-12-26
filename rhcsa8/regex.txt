@@ -1,15 +1,21 @@
+#Email
 alice@gmail.com
 bob@yahoo.com
 harry@microsoft.com
 tim@amazon.com
 tom@mcafee.com
+san.dahal@gmail.com
+tim_shore@gmail.com
+khan-091@gmail.com
+sdahal12@gmail.com
 
+# Telephone
 123-123-4567
 (999)777-8686
 001 235 657 1962
 1111222234
 
-
+#Domains
 www.mcafee.com
 www.redhat.com
 www.microsoft.com
@@ -17,6 +23,7 @@ www.yahoo.com
 www.amazon.com
 www.google.com
 
+#Name
 Mr. Smith 
 Mr. Tom
 Mr. Hrry
@@ -30,8 +37,13 @@ Master joe
 Master lee
 Master ku
 
-He is sending an email which is going to tell how the story will be mooving forward in the up coming days. 
+#Lines
+He is sending 
+an email which is going 
+to tell how the story will be mooving 
+forward in the up coming days. 
 
+#IP Address
 10.10.10.10
 192.168.1.100
 192.168.1.101

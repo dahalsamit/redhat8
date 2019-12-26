@@ -1,0 +1,9 @@
+Q1) Install ssh server on centos start the service and enable it. open firewall port 22 for ssh server.
+Q2) ssh from client to remote server
+Q3) Generate ssh key pair and copy it to server and client machine for password less ssh.
+Q4) Use Banner and ssh idle session time out to be 5 minutes.
+Q5) Explore ssh cipher used for ssh protocol
+Q6) Disable root user to ssh into the machine
+Q7) Configure ssh for puplic private key pair for ssh connection.
+Q8) Login in to the machine can configure multiuser target.
+
