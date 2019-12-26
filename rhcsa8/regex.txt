@@ -1,0 +1,41 @@
+alice@gmail.com
+bob@yahoo.com
+harry@microsoft.com
+tim@amazon.com
+tom@mcafee.com
+
+123-123-4567
+(999)777-8686
+001 235 657 1962
+1111222234
+
+
+www.mcafee.com
+www.redhat.com
+www.microsoft.com
+www.yahoo.com
+www.amazon.com
+www.google.com
+
+Mr. Smith 
+Mr. Tom
+Mr. Hrry
+Mrs. Alice
+Mrs. Shara
+Mrs. Jane
+Miss. Santa
+Miss. carla
+Miss. Amanda
+Master joe
+Master lee
+Master ku
+
+He is sending an email which is going to tell how the story will be mooving forward in the up coming days. 
+
+10.10.10.10
+192.168.1.100
+192.168.1.101
+172.16.25.10
+144.23.34.12
+35.65.12.112
+

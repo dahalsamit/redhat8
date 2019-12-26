@@ -1,34 +1,36 @@
-Exam Objectives:
-Access the shell prompt and issue commands with correct syntax
-use input-output redirection (>, >> | , 2 > etc.)
-Use grep and regular expression to analyze text.
 
-Q1) Write a command to show first 10 line from /var/log/syslog.
-head -10 /var/log/syslog
-Q2) Write a command to show last 10 line from  /var/log/syslog.
+Q1 first 10 line of /var/log/syslog
+head -n 10 /var/log/syslog
+
+Q2 Last 10 line of /var/log/syslog
 tail -n 10 /var/log/syslog
-Q3) Write a command so that the content of /etc/passwd is copied to /root/passwoed.1
 
-cat /etc/passwd >> /root/password.1
-Q4) Write a command so that the user in  /etc/passwd  having a shell /bin/bash is saved to /root/password.bash
-cat /etc/passwd | grep "/bin/bash$" >> /root/password.bash
-Q5) Write a command to redirect the STDERR to  /root/stderr.out 
-ls -al /proc/1/fd/* 2 > /stderr.out
-Q6) Write a command to redirect the STDERR to /dev/null.
-ls -al /proc/1/smap 2> /dev/null
-Q5) You have a apache logs file in /var/log/apache with access.log and error.log. Use grep with regular expression in order to achieve following objectives.
-1) Grep ip address from both access and error log file
+Q3 redirecting output of  /etc/passwd to /root/password.1
+cat /etc/passwd > /root/password.1
 
-3) Grep IP address and their corrosponding count
+Q3a Appending /etc/passwd to /root/password.1 
+cat /etc/passwd | tee  -a /root/password.1
 
-Q6) Grep regexp
-You have to read the file regex.txt
-and grep email address
-grep phone Numbers
-grep Domain Name
-grep ip address
-grep Word starting with Mr. only
-grep Word ending with ing only.
+Q4 user with /bin/bash
+grep "/bin/bash$" /etc/passwd > /root/password.bash
+
+Q5 redirect stderr to /root/stderr.out
+ls -al /proc/1/fd/* 2> /root/stderr.out
+
+Q6 redirect stdout to /dev/null
+ls -al /proc 1 > /dev/null
+
+Q7 You have a apache logs file /var/log/apache with access.log and error.log. Use grep with regular expression to achieve following objectives.
+-Grep ip address from access.log file
+-Grep IP address and their corrosponding count
+
+Q8  You have to read the file regex.txt
+-grep email address only 
+-grep phone Numbers only 
+-grep Domain Name only 
+-grep ip address on;ly
+-grep Word starting with Mr. only
+-grep Word ending with ing only."
 
 
 
